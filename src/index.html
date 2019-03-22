@@ -6,49 +6,111 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Basic site with parcel</title>
   <link rel="stylesheet" href="scss/styles.scss">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-	<header>
-		<nav>
-			<img src="./img/urban-decay_logo.jpg" alt="Logo Urban Decay">
+	<header class="header">
+		<nav class="header__menu">
+			<img class="menu__logo" src="./img/urban-decay_logo.png" alt="Logo Urban Decay">
 			<!--<a href="#">option Menu 1</a>
 			<a href="#">deuxieme option du menu</a>
 			<a href="#">option du menu n°3</a>-->
 		</nav>
 	</header>
-	<main>
-		<article>
-			<h1>Sunt inopiam gnarus ultra administrante.</h1>
-			<h2>Sunt inopiam gnarus ultra administrante.</h2>
-			<h2>Sunt inopiam gnarus ultra administrante.</h2>
-			<h3>Sunt inopiam gnarus ultra administrante.</h3>
+	<main class="main">
+		<section class="main__slogan slogan">
+			<h1 class="slogan__title">Nouveautés</h1>
+			<h1 class="slogan__title">NAKED Cherry</h1>
+			<h2 class="slogan__subtitle">Toujours plus belles</h2>
+			<!--<h2>Sunt inopiam gnarus ultra administrante.</h2>-->
+			<a href="#" class="slogan__sell">Acheter le produit <i></i></a>
+		</section>
+		<article class="main__product product">
+			<figure class="product__slider">
+				<img class="product__image" src="./img/nakedcherry/nakedcherry.jpg" alt="Palette Naked Cherry">
+				<img class="product__image" src="./img/nakedcherry/nakedcherry_collection.jpg" alt="Naked Cherry Collection">
+				<img class="product__image" src="./img/nakedcherry/look-2_nakedcherry.jpg" alt="Look Naked Cherry">
+				<img class="product__image" src="./img/nakedcherry/nakedcherry_palette_home.jpg" alt="Palette Naked Cherry">
+			</figure>
+			<video  class="product__video" autoplay loop src="./media/urban-decay_naked-cherry.mp4"></video>
+			<i class="fas fa-chevron-down"></i>
 		</article>
-		<article>
-			<img src="./img/nakedcherry/nakedcherry.jpg" alt="Palette Naked Cherry">
-			<!--<img src="./img/naked3/naked3.jpg" alt="Palette Naked3">-->
-			<!-- chevron vers le bas à mettre !!NE PAS OUBLIER!! -->
-		</article>
-		<article>
-			desciption palette
-			<section>
-				caractéristique 1
-			</section>
-			<section>
-				caractéristique 2
-			</section>
-			<section>
-				caractéristique 3
-			</section>
-			<section>
-				caractéristique 4
-			</section>
+		<article class="main__description descriptions">
+			<h2>Description de la palette</h2>
+			<div class="descriptions__sections">
+				<section class="descriptions__section description">
+					<article class="description__caracteristique">
+						<h2>look sexy plus piquant que sucré</h2>
+						<h2>12 (nouvelles) teintes inédites</h2>
+						<img class="caracteristique__image" src="./img/nakedcherry/nakedcherry_shades.png" alt="teintes palette Naked Cherry">
+					</article>
+				</section>
+				<section class="descriptions__section">
+					<article class="description__caracteristique">
+						<h2>Un maquillage pour toutes les occasions</h2>
+						<h2>Résistance longue durée</h2>
+						<img class="caracteristique__image" src="./img/nakedcherry/nakedcherry_all-occasions.png" alt="Naked Cherry for all occasions">
+					</article>
+				</section>
+				<section class="descriptions__section">
+					<article class="description__caracteristique">
+						<h2>Des looks plus différents les uns que les autres</h2>
+						<img class="caracteristique__image" src="./img/nakedcherry/look-9_nakedcherry.jpg" alt="Look nakedCherry">
+					</article>
+				</section>
+				<section class="descriptions__section">
+					<h2>Nuances incluses :</h2>
+					<article class="description__caracteristique caracteristique">
+						
+						<ul class="caracteristique__list liste hide">
+							<li>Hot Spot (ivoire mat)</li>
+							<li>Caution (un doux nude beige mat)</li>
+							<li>Bang Bang (un rose étincelant avec un mélange d’or scintillant et d’un micro-éclat irisé) </li>
+							<li>Feelz (rose poudré mat)</li>
+							<li>Juicy (pêche doux et chaleureux)</li>
+							<li>Turn On (rose pâle métallisé étincelant)</li>
+							<li>Ambitious (rose metallique cuivré)</li>
+							<li>Bing (un violet profond mat)</li>
+							<li>Devilish (prune mate)</li>
+							<li>Young Love (cranberry métallique)</li>
+							<li>Drunk Dial (bordeau métallique profond)</li>
+							<li>Privacy (mate brun-prune profond)</li>
+
+						</ul>
+						<i class="fas fa-angle-down list_clic"></i>
+					</article>
+				</section>
+				<section class="descriptions__section">
+					<h2>Les teintes (fidèles à leurs promesses !) : </h2>
+					<article class="description__caracteristique caracteristique">
+						<ul class="caracteristique__list liste hide">
+							<li>Strange (rose neutre pâle mat satiné), </li>
+							<li>Dust (rose pâle métallisé scintillant rehaussé de micro-paillettes irisées), </li>
+							<li>Burnout (rose pêche clair satiné), </li>
+							<li>Limit (rose poudré clair mat), </li>
+							<li>Buzz (rose métallisé scintillant rehaussé de micro-paillettes argentées), </li>
+							<li>Trick (rose cuivré clair métallisé scintillant rehaussé de micro-paillettes ton sur ton), </li>
+							<li>Nooner (rose brun moyen mat), </li>
+							<li>Liar (mauve moyen métallisé scintillant),</li>
+							<li>Factory (rose brun satiné), </li>
+							<li>Mugshot (taupe métallisé scintillant rehaussé de rose léger), </li>
+							<li>Darkside (mauve taupe intense satiné) </li>
+							<li>Darkheart (noir mat smoky rehaussé de micro-paillettes rouge rosé).</li>
+
+						
+						</ul>
+						<i class="fas fa-angle-down list_clic"></i>
+					</article>
+				</section>
+			</div>
 		</article>
 	</main>
-	<footer>
-		<a href="#">Sunt inopiam gnarus</a>
-		<a href="#">Sunt inopiam gnarus</a>
+	<footer class="footer">
+		<a class="footer__link" href="#">Sunt inopiam gnarus</a>
+		<a class="footer__link" href="#">Sunt inopiam gnarus</a>
 	</footer>
 
 <!-- @@@ JS -->
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

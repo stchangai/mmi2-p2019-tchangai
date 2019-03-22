@@ -1,0 +1,22 @@
+.footer{
+	height:10vh;
+	width:100%;
+	/*background-color:pink;*/
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+
+	@include iphoneplus{
+		height:15vh;
+		flex-wrap:wrap;
+	}
+
+	@include desktop{
+		
+	}
+}
+
+.footer__link{
+	text-decoration: none;
+	color:black;
+}
