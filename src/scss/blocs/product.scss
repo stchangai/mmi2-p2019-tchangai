@@ -15,6 +15,8 @@
 	height:auto;
 	width:100%;
 	text-align:center;
+	position: absolute;
+	top: 25vh;
 
 	@include iphoneplus{
 		height:20vh;
@@ -31,9 +33,11 @@
 	margin:5vh;
 	font-weight:bold;
 	font-family:"Amatic SC", arial;
-	color:transparent;
+	background: gray;
+  opacity: 0.9;
+	/*color:transparent;
 	-webkit-background-clip: text;
-  background-image: url("../img/nakedcherry/colors_background.jpg");
+  background-image: url("../img/nakedcherry/colors_background.jpg");*/
 
 	&:nth-child(2){
 		font-weight:bold;
@@ -44,6 +48,7 @@
 		font-weight:bold;
 		z-index: 100;
 		mix-blend-mode: difference;
+		background: transparent;
 	  opacity:0.5;
 
 	}
@@ -96,6 +101,7 @@
 	width: 400vw;
 	margin: 0;
 	padding: 0;
+	z-index:-100;
 
   @include desktop{
 		display:none;
