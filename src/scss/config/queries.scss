@@ -10,3 +10,9 @@
 		@content;
 	}
 }
+
+@mixin bigscreen{
+	@media(min-width:1040px){
+		@content
+	}
+}
