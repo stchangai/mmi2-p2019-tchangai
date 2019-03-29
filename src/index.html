@@ -13,27 +13,22 @@
 	<header class="header">
 		<nav class="header__menu">
 			<img class="menu__logo" src="./img/urban-decay_logo.png" alt="Logo Urban Decay">
-			<!--<a href="#">option Menu 1</a>
-			<a href="#">deuxieme option du menu</a>
-			<a href="#">option du menu n°3</a>-->
 		</nav>
 	</header>
 	<main class="main">
 		<section class="main__slogan slogan">
 			<h1 class="slogan__title">Nouveauté</h1>
 			<h1 class="slogan__title">NAKED Cherry</h1>
-			<!--<h2 class="slogan__subtitle">Toujours plus belles</h2>-->
-			<!--<h2>Sunt inopiam gnarus ultra administrante.</h2>
-			<a href="#" class="slogan__sell">Acheter le produit <i></i></a>-->
+			<i class="fas fa-angle-down"></i>
 		</section>
 		<article class="main__product product">
 			<figure class="product__slider">
-				<img class="product__image" src="./img/nakedcherry/nakedcherry.jpg" alt="Palette Naked Cherry">
-				<img class="product__image" src="./img/nakedcherry/nakedcherry_collection.jpg" alt="Naked Cherry Collection">
-				<img class="product__image" src="./img/nakedcherry/look-2_nakedcherry.jpg" alt="Look Naked Cherry">
-				<img class="product__image" src="./img/nakedcherry/nakedcherry_palette_home.jpg" alt="Palette Naked Cherry">
+				<img class="product__image" src="./img/nakedcherry.jpg" alt="Palette Naked Cherry">
+				<img class="product__image" src="./img/nakedcherry_collection.jpg" alt="Naked Cherry Collection">
+				<img class="product__image" src="./img/look-2_nakedcherry.jpg" alt="Look Naked Cherry">
+				<img class="product__image" src="./img/nakedcherry_palette_home.jpg" alt="Palette Naked Cherry">
 			</figure>
-			<video  class="product__video" autoplay loop src="./media/urban-decay_naked-cherry.mp4"></video>
+			<iframe class="product__video" width="1280" height="720" src="https://www.youtube.com/embed/iZrmt3gb-vc?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
 		</article>
 		<article class="main__description descriptions">
 			<h2>Description de la palette</h2>
@@ -42,20 +37,22 @@
 					<article class="description__caracteristique">
 						<h2>look sexy plus piquant que sucré</h2>
 						<h2>12 (nouvelles) teintes inédites</h2>
-						<img class="caracteristique__image" src="./img/nakedcherry/nakedcherry_shades.png" alt="teintes palette Naked Cherry">
+						<img class="caracteristique__image" src="./img/nakedcherry_shades.png" alt="teintes palette Naked Cherry">
 					</article>
 				</section>
 				<section class="descriptions__section">
 					<article class="description__caracteristique">
 						<h2>Un maquillage pour toutes les occasions</h2>
 						<h2>Résistance longue durée</h2>
-						<img class="caracteristique__image" src="./img/nakedcherry/nakedcherry_all-occasions.png" alt="Naked Cherry for all occasions">
+						<img class="caracteristique__image" src="./img/nakedcherry_all-occasions.png" alt="Naked Cherry for all occasions">
 					</article>
 				</section>
 				<section class="descriptions__section">
 					<article class="description__caracteristique">
 						<h2>Des looks plus différents les uns que les autres</h2>
-						<img class="caracteristique__image" src="./img/nakedcherry/look-9_nakedcherry.jpg" alt="Look nakedCherry">
+						<img class="caracteristique__image" src="./img/look-9_nakedcherry.jpg" alt="Look1 nakedCherry">
+						<img class="caracteristique__image" src="./img/look-2_nakedcherry.jpg" alt="Look2 nakedCherry">
+						<img class="caracteristique__image" src="./img/look-10_nakedcherry.jpg" alt="Look2 nakedCherry">
 					</article>
 				</section>
 				<section class="descriptions__section">
@@ -75,16 +72,19 @@
 							<li>Young Love (cranberry métallique)</li>
 							<li>Drunk Dial (bordeau métallique profond)</li>
 							<li>Privacy (mate brun-prune profond)</li>
-
 						</ul>
-						<img class="caracteristique__image" src="./img/nakedcherry/nakedcherry_palette.png" alt="Palette Naked Cherry">
+						<img class="caracteristique__image" src="./img/nakedcherry_palette.png" alt="Palette Naked Cherry">
 						<i class="fas fa-angle-down list_clic"></i>
 					</article>
 				</section>
 				<section class="descriptions__section">
 					<h2>Les teintes (fidèles à leurs promesses !) : </h2>
 					<article class="description__caracteristique caracteristique">
-						<ul class="caracteristique__list liste hide">
+						<img class="caracteristique__image" src="./img/nakedcherry_eye-sample.png" alt="Make up eye inspiration">
+						<img class="caracteristique__image" src="./img/eye-look-1_nakedcherry.jpg" alt="Make up eye inspiration2">
+						<img class="caracteristique__image" src="./img/eye-look-2_nakedcherry.jpg" alt="Make up eye inspiration3">
+						<h3>Découvrez les différentes teintes de la palette NakedCHerry : </h3>
+						<ul id="teintes" class="caracteristique__list liste hide">
 							<li>Strange (rose neutre pâle mat satiné), </li>
 							<li>Dust (rose pâle métallisé scintillant rehaussé de micro-paillettes irisées), </li>
 							<li>Burnout (rose pêche clair satiné), </li>
@@ -96,11 +96,8 @@
 							<li>Factory (rose brun satiné), </li>
 							<li>Mugshot (taupe métallisé scintillant rehaussé de rose léger), </li>
 							<li>Darkside (mauve taupe intense satiné) </li>
-							<li>Darkheart (noir mat smoky rehaussé de micro-paillettes rouge rosé).</li>
-
-						
+							<li>Darkheart (noir mat smoky rehaussé de micro-paillettes rouge rosé).</li>						
 						</ul>
-						<img class="caracteristique__image" src="./img/nakedcherry/nakedcherry_eye-sample.png" alt="Make up eye inspiration">
 						<i class="fas fa-angle-down list_clic"></i>
 					</article>
 				</section>
@@ -108,8 +105,20 @@
 		</article>
 	</main>
 	<footer class="footer">
-		<a class="footer__link" href="#">Sunt inopiam gnarus</a>
-		<a class="footer__link" href="#">Sunt inopiam gnarus</a>
+		<div>
+			<a class="footer__link--biggest" href="#">VOTRE BOUTIQUE Urban Decay</a>
+			<a class="footer__link" href="#">Services de Maquillage</a>
+			<a class="footer__link" href="#">Produits Urban Decay</a>
+		</div>
+		<div>
+			<a class="footer__link--biggest" href="#">SERVICE CLIENTS</a>
+			<a class="footer__link" href="#">Nous CONTACTER</a>
+			<a class="footer__link" href="#">5 bonnes raisons d'acheter</a>
+		</div>
+		<div>
+			<a class="footer__link--biggest" href="#">À PROPOS DE Urban Decay</a>
+			<a class="footer__link" href="#">Notre Histoire</a>
+		</div>
 	</footer>
 
 <!-- @@@ JS -->
